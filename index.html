@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colby Martel - YouTuber, Entrepreneur & Live Show Host</title>
-    <meta name="description" content="Colby Martel - 500K+ YouTube subscribers, 200K+ TikTok followers, brand partnerships with Subway, Grammarly, American Eagle, Starbucks, Chegg, Target, State Farm & Kodak. Founder of GuessTheSinger.com">
+    <title>Colby Martel - YouTuber, Entrepreneur & Game Show Host</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="description" content="Colby Martel - 650K+ YouTube subscribers, 250K+ TikTok followers, brand partnerships with Subway, Grammarly, American Eagle, Starbucks, Chegg, Target, State Farm & Kodak. Founder of GuessTheSinger.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
@@ -234,6 +235,11 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
 
+        .brand-icon img {
+    max-width: 80px;
+    max-height: 60px;
+    object-fit: contain;
+}
         .play-button {
             position: absolute;
             top: -8px;
@@ -482,19 +488,23 @@
             gap: 1.5rem;
             margin-bottom: 2rem;
         }
+        .press-logo{
+    width:60px;
+    height:60px;
+    background:white;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    flex-shrink:0;
+}
 
-        .press-logo {
-            width: 60px;
-            height: 60px;
-            background: var(--primary);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
+.press-logo img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
 
         .press-title {
             font-size: 1.5rem;
@@ -1445,6 +1455,13 @@
                 padding: 0 0.75rem;
             }
         }
+        .brand-logo{
+    width:100%;
+    height:60px;
+    object-fit:contain;
+    display:block;
+    margin:auto;
+}
     </style>
 </head>
 <body>
@@ -1465,9 +1482,7 @@
                 <li><a href="#press">Press</a></li>
                 <li><a href="#brands">Brands</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#jobs">Join Us</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="applicants.html">Applications</a></li>
             </ul>
         </div>
     </nav>
@@ -1476,7 +1491,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1 class="fade-in">Colby Martel</h1>
-            <p class="fade-in">YouTuber • Entrepreneur • Live Show Host</p>
+            <p class="fade-in">YouTuber • Entrepreneur • Game Show Host</p>
             
             <div class="hero-stats">
                 <div class="stats-card fade-in">
@@ -1487,15 +1502,15 @@
                     </div>
                     <div class="stats-grid">
                         <div class="stat">
-                            <span class="stat-number" data-target="523000">0</span>
+                            <span class="stat-number" data-target="649451">0</span>
                             <span class="stat-label">SUBSCRIBERS</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number" data-target="372">0</span>
+                            <span class="stat-number" data-target="499">0</span>
                             <span class="stat-label">VIDEOS</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number" data-target="437600000">0</span>
+                            <span class="stat-number" data-target="629800000">0</span>
                             <span class="stat-label">VIEWS</span>
                         </div>
                     </div>
@@ -1520,15 +1535,13 @@
         <div class="container">
             <div class="section-header fade-in">
                 <h2>About Me</h2>
-                <p>Passionate content creator and entrepreneur building the future of entertainment</p>
             </div>
             
             <div class="about-content">
                 <div class="about-text fade-in">
-                    <h3>Building Digital Empires</h3>
-                    <p>With over 500K YouTube subscribers and 200K TikTok followers, I've built a community that spans across multiple platforms. My content focuses on music, entertainment, and lifestyle, creating authentic connections with audiences worldwide.</p>
-                    <p>As the founder of GuessTheSinger.com, I've transformed a simple music guessing game into a comprehensive entertainment platform featuring live shows, digital games, and interactive experiences that bring people together through the universal language of music.</p>
-                    <p>My journey has taken me to 27 colleges across the country, where I've had the privilege of connecting with students and sharing my passion for entertainment and entrepreneurship.</p>
+                    <p>With over 650K YouTube subscribers and 250K TikTok followers, I've built a community that spans across multiple platforms. My content focuses on music, entertainment, and lifestyle, creating authentic connections with audiences worldwide.</p>
+                    <p>As the founder of GuessTheSinger.com, I've transformed a simple music guessing game into an entertainment platform featuring live shows, digital games, and interactive experiences that bring people together through music.</p>
+                    <p>My journey has taken me to 30 colleges across the country, where I've had the privilege of connecting with students and sharing my passion for entertainment and entrepreneurship.</p>
                 </div>
                 <div class="about-image fade-in">
                     <img src="images/ColbyMartel.jpg" alt="Colby Martel">
@@ -1540,104 +1553,116 @@
     <!-- Press Section -->
     <section id="press" class="section press-release">
         <div class="container">
+    
             <div class="section-header fade-in">
                 <h2>Press & Recognition</h2>
-                <p>Featured in leading publications and recognized for entrepreneurial excellence</p>
             </div>
-            
+    
+            <!-- NEW YOUTUBE ARTICLE -->
             <div class="press-card fade-in">
                 <div class="press-header">
-                    <div class="press-logo">B</div>
+                    <div class="press-logo">
+                        <img src="images/youtubelogo.jpg" alt="YouTube Logo">
+                    </div>
+                    <div>
+                        <div class="press-title">YouTube – The U.S. of YouTube</div>
+                        <div class="press-subtitle">Creator Spotlight</div>
+                    </div>
+                </div>
+            
+                <div class="press-content">
+                    <p>Colby Martel entered college dreaming of being a filmmaker. Inspired by the success of creators like MrBeast and Ryan Trahan, he began filming man-on-the-street interviews to leverage the human connection and storytelling YouTube offers.</p>
+            
+                    <p>This unique approach resonated instantly, and his YouTube content—inviting strangers to share a meal or guessing their favorite singer—rapidly gained subscribers and became his full-time career.</p>
+            
+                </div>
+            
+                <a href="https://www.youtube.com/howyoutubeworks/us-of-youtube/#NH" class="press-link" target="_blank">
+                    Read Full Article <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+    
+    
+            <!-- BABSON ARTICLE -->
+            <div class="press-card fade-in">
+                <div class="press-header">
+                    <div class="press-logo">
+                        <img src="images/babsonlogo.jpg" alt="Babson Logo">
+                    </div>
                     <div>
                         <div class="press-title">Babson College Entrepreneurship</div>
                         <div class="press-subtitle">Scholar Stories - Featured Entrepreneur</div>
                     </div>
                 </div>
+    
                 <div class="press-content">
                     <p>Colby Martel has been featured in Babson College's prestigious Scholar Stories series, highlighting his innovative approach to digital entertainment and entrepreneurship. His work with GuessTheSinger.com demonstrates how technology and creativity can be combined to create engaging, interactive experiences that bring people together.</p>
+    
                     <p>As a featured entrepreneur, Colby's journey from content creator to business founder showcases the power of identifying market opportunities and building communities around shared passions. His success in reaching millions of viewers and partnering with major brands serves as an inspiration for aspiring entrepreneurs.</p>
                 </div>
+    
                 <a href="https://entrepreneurship.babson.edu/scholar-stories/" class="press-link" target="_blank">
                     Read Full Article <i class="fas fa-external-link-alt"></i>
                 </a>
             </div>
+    
         </div>
     </section>
 
     <!-- Brands Section -->
-    <section id="brands" class="section brands">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2>Brand Partnerships</h2>
-                <p>Trusted by leading brands to create authentic, engaging content</p>
-            </div>
-            
-            <div class="brands-grid">
-                <div class="brand-card fade-in">
-                    <div class="brand-icon">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <div class="brand-name">Subway</div>
-                </div>
-                
-                <div class="brand-card fade-in">
-                    <div class="brand-icon">
-                        <i class="fas fa-pen-fancy"></i>
-                    </div>
-                    <div class="brand-name">Grammarly</div>
-                </div>
-                
-                <div class="brand-card fade-in">
-                    <div class="brand-icon">
-                        <i class="fas fa-tshirt"></i>
-                    </div>
-                    <div class="brand-name">American Eagle</div>
-                </div>
-                
-                <div class="brand-card fade-in">
-                    <div class="brand-icon">
-                        <i class="fas fa-coffee"></i>
-                    </div>
-                    <div class="brand-name">Starbucks</div>
-                </div>
-                
-                <div class="brand-card fade-in">
-                    <div class="brand-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="brand-name">Chegg</div>
-                </div>
-                
-                <div class="brand-card fade-in">
-                    <div class="brand-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <div class="brand-name">Target</div>
-                </div>
-                
-                <div class="brand-card fade-in">
-                    <div class="brand-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <div class="brand-name">State Farm</div>
-                </div>
-                
-                <div class="brand-card fade-in">
-                    <div class="brand-icon">
-                        <i class="fas fa-camera"></i>
-                    </div>
-                    <div class="brand-name">Kodak</div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
+<section id="brands" class="section brands">
 
+    <div class="container">
+    
+        <div class="section-header fade-in">
+            <h2>Brand Partnerships</h2>
+        </div>
+    
+    <div class="brands-grid">
+    
+    <div class="brand-card">
+    <img src="images/subwaylogo.jpg" class="brand-logo">
+    </div>
+    
+    <div class="brand-card">
+    <img src="images/grammarly.png" class="brand-logo">
+    </div>
+    
+    <div class="brand-card">
+    <img src="images/americaneagle.png" class="brand-logo">
+    </div>
+    
+    <div class="brand-card">
+    <img src="images/starbucks.png" class="brand-logo">
+    </div>
+    
+    <div class="brand-card">
+    <img src="images/chegg.png" class="brand-logo">
+    </div>
+    
+    <div class="brand-card">
+    <img src="images/target.png" class="brand-logo">
+    </div>
+    
+    <div class="brand-card">
+    <img src="images/statefarm.png" class="brand-logo">
+    </div>
+    
+    <div class="brand-card">
+    <img src="images/kodak.png" class="brand-logo">
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    </section>
     <!-- Projects Section -->
     <section id="projects" class="section projects">
         <div class="container">
             <div class="section-header fade-in">
                 <h2>Featured Projects</h2>
-                <p>Innovative ventures that bring entertainment and technology together</p>
             </div>
             
             <div class="projects-grid">
@@ -1693,59 +1718,6 @@
         </div>
     </section>
 
-    <!-- Jobs Section -->
-    <section id="jobs" class="section jobs-section">
-        <div class="jobs-container">
-            <div class="jobs-header fade-in">
-                <h2>Join Our Team</h2>
-                <p>Be part of the future of entertainment and digital content creation</p>
-            </div>
-            
-            <div class="job-cards">
-                <div class="job-card fade-in">
-                    <h3 class="job-title">Content Creator</h3>
-                    <p class="job-description">Join our creative team to produce engaging content for multiple platforms including YouTube, TikTok, and live events.</p>
-                    <ul class="job-requirements">
-                        <li>Experience in video production and editing</li>
-                        <li>Strong understanding of social media trends</li>
-                        <li>Creative mindset and storytelling abilities</li>
-                        <li>Ability to work in fast-paced environments</li>
-                    </ul>
-                    <a href="booking-form.html" class="apply-btn">Apply Now</a>
-                </div>
-                
-                <div class="job-card fade-in">
-                    <h3 class="job-title">Live Show Coordinator</h3>
-                    <p class="job-description">Help coordinate and manage our live show productions across college campuses and events nationwide.</p>
-                    <ul class="job-requirements">
-                        <li>Event planning and coordination experience</li>
-                        <li>Strong organizational and communication skills</li>
-                        <li>Experience with live entertainment production</li>
-                        <li>Willingness to travel frequently</li>
-                    </ul>
-                    <a href="booking-form.html" class="apply-btn">Apply Now</a>
-                </div>
-                
-                <div class="job-card fade-in">
-                    <h3 class="job-title">Marketing Specialist</h3>
-                    <p class="job-description">Develop and execute marketing strategies for our brand partnerships and content campaigns.</p>
-                    <ul class="job-requirements">
-                        <li>Digital marketing experience</li>
-                        <li>Brand partnership management skills</li>
-                        <li>Analytics and data-driven decision making</li>
-                        <li>Creative campaign development</li>
-                    </ul>
-                    <a href="booking-form.html" class="apply-btn">Apply Now</a>
-                </div>
-            </div>
-            
-            <div class="jobs-cta fade-in">
-                <h3>Don't See Your Role?</h3>
-                <p>We're always looking for talented individuals to join our team. Send us your resume and let us know how you can contribute to our mission of creating amazing entertainment experiences.</p>
-                <a href="booking-form.html" class="apply-btn">Send Resume</a>
-            </div>
-        </div>
-    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section contact">
@@ -1802,7 +1774,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Colby Martel. All rights reserved. | Built with passion and creativity</p>
+        <p>&copy; 2026 Colby Martel. All rights reserved. | Built with passion and creativity</p>
     </footer>
 
     <!-- Scripts -->
